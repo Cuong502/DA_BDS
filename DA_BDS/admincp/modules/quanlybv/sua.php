@@ -1,5 +1,5 @@
 <?php
-	$sql_sua_bv = "SELECT * FROM tbl_baiviet WHERE id_baiviet='$_GET[idbaiviet]' LIMIT 1";
+	$sql_sua_bv = "SELECT * FROM tbl_baiviet WHERE id_baiviet='$_GET[id_baiviet]' LIMIT 1";
 	$query_sua_bv = mysqli_query($mysqli,$sql_sua_bv);
 ?>
 <p>Sửa bài viết</p>
@@ -35,6 +35,29 @@ while($row = mysqli_fetch_array($query_sua_bv)) {
 	  	<td>Nội dung</td>
 	  	<td><textarea rows="10"  name="noidung" style="resize: none"><?php echo  $row['noidung'] ?></textarea></td>
 	  </tr>
+
+	  <tr>
+	  	<td>thời gian đầu tư</td>
+	  	<td><input type="text" name="thoigiandautu"></td>	  
+	  </tr>
+	  <tr>
+	  	<td>Lợi nhuận kỳ vọng</td>
+	  	<td><input type="text" name="loinhuankyvong"></td>	  
+	  </tr>
+	  <tr>
+	  	<td>số nhà đầu tư</td>
+	  	<td><input type="text" name="sonhadautu"></td>	  
+	  </tr>
+	  <tr>
+	  	<td>Đã bán</td>
+	  	<td><input type="text" name="daban" ></td>	  
+	  </tr>
+	  <tr>
+	  	<td>địa chỉ</td>
+	  	<td><input type="text" name="diachi"></td>	  
+	  </tr>
+	  <tr>
+		  
 	  <tr>
 	    <td>Danh mục BĐS</td>
 	    <td>

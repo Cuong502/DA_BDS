@@ -20,7 +20,7 @@
     <td><?php echo $row['tendanhmuc'] ?></td>
    	<td>
    		<a href="modules/quanlydanhmucbv/xuly.php?iddanhmuc=<?php echo $row['id_danhmuc'] ?>">Xoá</a> 
-       | <a href="?action=quanlydanhmucsanpham&query=sua&iddanhmuc=<?php echo $row['id_danhmuc'] ?>">Sửa</a> 
+       | <a href="?action=quanlydanhmucbaiviet&query=sua&iddanhmuc=<?php echo $row['id_danhmuc'] ?>">Sửa</a> 
    	</td>
    
   </tr>

@@ -15,11 +15,17 @@
 					include("modules/quanlydanhmucbv/lietke.php");
 				}elseif ($tam=='quanlydanhmucbaiviet' && $query=='sua') {
 					include("modules/quanlydanhmucbv/sua.php");
-				}elseif ($tam=='quanlysp' && $query=='them') {
+				}
+				
+				
+				elseif ($tam=='quanlybv' && $query=='them') {
 					include("modules/quanlybv/them.php");
 					include("modules/quanlybv/lietke.php");
-				}elseif($tam=='quanlysp' && $query=='sua'){
-					include("modules/quanlysp/sua.php");
+				}elseif($tam=='quanlybv' && $query=='sua'){
+					include("modules/quanlybv/sua.php");
+				
+				
+				
 				}elseif($tam=='quanlydonhang' && $query=='lietke'){
 					include("modules/quanlydonhang/lietke.php");
 				}elseif($tam=='donhang' && $query=='xemdonhang'){

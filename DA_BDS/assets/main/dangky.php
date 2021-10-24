@@ -1,28 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" type="image/png" href="./assets/img/logo-dhktdn-150.png"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./csss/styles.css">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&supset=vietnamese">
-    <title>Bất động sản KT</title>
-</head>
-    <body>
+<?php
+	if(isset($_POST['dangky'])) {
+		$tenkhachhang = $_POST['txtHovaten'];
+		$email = $_POST['txtEmail'];
+		$dienthoai = $_POST['txtDienthoai'];
+        $tentaikhoan = $_POST['txtTentaikhoan'];
+		$matkhau = md5($_POST['pswMatkhau']);
+		$sql_dangky = mysqli_query($mysqli,"INSERT INTO tbl_dangky(tenkhachhang,email,dienthoai,tentaikhoan,matkhau) 
+        VALUE('".$tenkhachhang."','".$email."','".$dienthoai."', '".$tentaikhoan."','".$matkhau."')");
+		if($sql_dangky){
+			echo '<p style="color:green">Bạn đã đăng ký thành công</p>';
+			$_SESSION['dangky'] = $tenkhachhang;
+			$_SESSION['id_khachhang'] = mysqli_insert_id($mysqli);
+			header('Location:index.php?quanly=dangnhap');
+		}
+	}
+?>
         <div class="root">
             <div class="root_img">
-                <form action="dangky">
+                <form action="#" method="POST">
                     <div class="style_content__register">
                         <div class="style_body">
                             <div class="react_tabs">
                                <ul class="react_tabslist">
-                                   <li class="style_tabs_login">Đăng nhập</li>
+                                   <li class="style_tabs_login">
+                                       <a href="index.php?quanly=dangnhap" style = "text-decoration: none; color: #000">Đăng nhập</a>
+                                    </li>
                                    <li class="style_tabs_register">Đăng ký</li>
                                </ul>
                                <div class="react_tabs_tab-panel">
@@ -33,7 +35,7 @@
                                                <i class=" iconfas fas fa-user fa-fw"></i>
                                                </div>
                                                <div class="style_input">
-                                                    <input name="fullName" placeholder="Họ Tên" value="">
+                                                    <input type = "text" name="txtHovaten" placeholder="Họ Tên" required>
                                                </div>
                                            </div>
                                        </div>
@@ -47,7 +49,21 @@
                                                <i class=" iconfas fas fa-envelope fa-fw"></i>
                                                </div>
                                                <div class="style_input">
-                                                    <input name="fullName" placeholder="Email" value="">
+                                                    <input type = "text"name="txtEmail" placeholder="Email" required>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="react_tabs_tab-panel">
+                                   <div class="style_formGroup">
+                                       <div class="style_input_container">
+                                           <div class="style_container">
+                                               <div class="style_iconcontainer">
+                                               <i class=" iconfas fas fa-phone fa-fw"></i>
+                                               </div>
+                                               <div class="style_input">
+                                                    <input type  = "text" name="txtDienthoai" placeholder="Số điện thoại" required>
                                                </div>
                                            </div>
                                        </div>
@@ -62,7 +78,7 @@
                                                <i class=" iconfas fas fa-user fa-fw"></i>
                                                </div>
                                                <div class="style_input">
-                                                    <input name="fullName" placeholder="Tên tài khoản" value="">
+                                                    <input type = "text" name="txtTentaikhoan" placeholder="Tên tài khoản" required>
                                                </div>
                                            </div>
                                        </div>
@@ -76,7 +92,7 @@
                                                <i class=" iconfas fas fa-envelope fa-fw"></i>
                                                </div>
                                                <div class="style_input">
-                                                    <input name="fullName" placeholder="Mật khẩu" value="">
+                                                    <input type = "password" name="pswMatkhau" placeholder="Mật khẩu" required>
                                                </div>
                                            </div>
                                        </div>
@@ -85,7 +101,7 @@
                                <div class="react_tabs_tab-panel">
                                    <div class="style_formGroup">
                                        <div class="style_input_container">
-                                           <button class="style_button">Đăng ký</button>
+                                           <input class="style_button" type="submit" name="dangky" value="Đăng ký">
                                        </div>
                                    </div>
                                </div>
@@ -95,5 +111,4 @@
                 </form>
             </div>
         </div>
-    </body>
-</html>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

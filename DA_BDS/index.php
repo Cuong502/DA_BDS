@@ -20,6 +20,7 @@
         <div class="container">
             <?php
                 session_start();
+                include("admincp/config/config.php");
                 include('./assets/pages/header.php');
                 include('./assets/pages/menu.php');
                 include('./assets/pages/main.php');
