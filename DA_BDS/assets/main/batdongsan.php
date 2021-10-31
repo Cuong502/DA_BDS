@@ -62,6 +62,12 @@
                                 </div>
                                 <div class="main_card_Progresscontainer">
                                     <div class="main_card_Progress">
+                                        <!-- <progress id="myProgress"  value="0" max="100"></progress>
+                                        <script>
+                                            function myFunction() {
+                                                document.getElementById("myProgress").value = "75";
+                                            } -->
+                                        </script>
                                             <div class="main_card_Progressvalue" style="width:70% "></div>
                                     </div>
                                 </div>

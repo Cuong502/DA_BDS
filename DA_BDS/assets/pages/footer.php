@@ -11,7 +11,7 @@
                                 </h3>
                                 <span>chúng  tôi  ở  đây  và  sẵn  sàng  hỗ  trợ  bạn  cùng  phát  triển .</span>
                             </div>
-                            <a href="assets/main/dangky.php" class="btn-call-to-act">Đăng ký ngay</a>
+                            <a href="index.php?quanly=dangky" class="btn-call-to-act">Đăng ký ngay</a>
                         </div>
                     </div>
                 </div>

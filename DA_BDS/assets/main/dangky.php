@@ -11,7 +11,7 @@
 			echo '<p style="color:green">Bạn đã đăng ký thành công</p>';
 			$_SESSION['dangky'] = $tenkhachhang;
 			$_SESSION['id_khachhang'] = mysqli_insert_id($mysqli);
-			header('Location:index.php?quanly=dangnhap');
+			header("Location:index.php?quanly=account");
 		}
 	}
 ?>
@@ -49,7 +49,7 @@
                                                <i class=" iconfas fas fa-envelope fa-fw"></i>
                                                </div>
                                                <div class="style_input">
-                                                    <input type = "text"name="txtEmail" placeholder="Email" required>
+                                                    <input type = "email"name="txtEmail" placeholder="Email" required>
                                                </div>
                                            </div>
                                        </div>

@@ -1,5 +1,5 @@
 <div class="main">
-<div class="slider_opacity">
+        <div class="slider_opacity">
             <section class="slider owl-carousel owl-theme">
                 <div class="slider_item slider_item_one">
                         <div class="wrapper">
@@ -252,6 +252,5 @@
                </div>
             </div>
 
-        </section>
-        
+        </section>   
     </div>
