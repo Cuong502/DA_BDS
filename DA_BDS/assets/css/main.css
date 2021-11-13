@@ -48,7 +48,7 @@
 .grid_login_a {
     text-decoration: none;
     color: #fff!important;
-    padding-left: 15px ;
+    padding: 10px 0 0 5px ;
 }
 .grid_login_icon{
     padding-left: 15px ;
@@ -58,13 +58,20 @@
     padding: 10px 10px 0 0;
     color: var(--white-color);
 }
+.user-avatar{
+    width: 28px; 
+    height: 28px; 
+    background-color:#fff;
+    Border-radius:50%
+}
 /* ----------------------- */
 .header_account{
     float: right;
-    padding: 10px 90px 0 0;
+    padding: 0px 90px 0 0;
     color: var(--white-color);
     display: block;
     z-index: 100;
+    
 }
 .header_account:hover .header__navbar-user-menu{
     display: block;
@@ -162,7 +169,7 @@
     text-decoration: none;
     float: left;
     list-style: none;
-    padding: 40px 0 25px 0;
+    /* padding: 40px 0 25px 0; */
     margin: 2px 0;
     display: block;
 }
@@ -177,6 +184,8 @@
     font-size:14px;
     font-weight: 500;
     display: block;
+    height: 80px;
+    line-height: 80px;
 }
 .header__navbar:hover{
     background-color: rgb(237, 206, 206);
@@ -848,7 +857,8 @@
 .main .main_header .main_row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin:  auto;
+    padding-top: 70px;
 }
 .main .main_header .main_itemwraper{
     flex: 1 1 auto;
@@ -1415,7 +1425,7 @@ span.prop-label{
 }
 .main_page-Background-header{
     height: 200px;
-    background-color: #FF9933;
+    background-color: #FF6633;
 }
 
 

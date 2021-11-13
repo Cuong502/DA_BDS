@@ -79,11 +79,11 @@
                     <div class="WalletContainer__walletBody">
                         <div class="WalletContainer__walletBody_amountContainer">
                             <b class="WalletContainer__walletBody_amount">0</b>
-                            <div class="WalletContainer__walletBody_currencyName">SOL</div>
+                            <div class="WalletContainer__walletBody_currencyName">BTC</div>
                         </div>
                         <div class="WalletContainer__walletBody_iconContainer">
                             <div class="WalletContainer__walletBody_iconContainer__currencyIcon">
-                                <img src="./assets/img/image-iconSOL.png" alt="">
+                                <img src="./assets/img/image-iconBCoin.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -92,11 +92,11 @@
                     <div class="WalletContainer__walletBody">
                         <div class="WalletContainer__walletBody_amountContainer">
                             <b class="WalletContainer__walletBody_amount">0</b>
-                            <div class="WalletContainer__walletBody_currencyName">SOL</div>
+                            <div class="WalletContainer__walletBody_currencyName">ETH</div>
                         </div>
                         <div class="WalletContainer__walletBody_iconContainer">
                             <div class="WalletContainer__walletBody_iconContainer__currencyIcon">
-                                <img src="./assets/img/image-iconSOL.png" alt="">
+                                <img src="./assets/img/image-iconEthe.png" alt="">
                             </div>
                         </div>
                     </div>

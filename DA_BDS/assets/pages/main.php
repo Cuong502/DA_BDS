@@ -15,6 +15,8 @@
                 include("assets/main/dangnhap.php");
             }elseif($tam=='chitietbatdongsan'){
                 include("assets/main/chitiet_bds.php");
+            }elseif($tam=='sansolana'){
+                include("assets/main/san_sol.php");
             }
 			else{
                 include("assets/main/home_page.php");

@@ -5,16 +5,21 @@
         <div class="grid_icon_phone"><i class="fas fa-phone-volume"></i></div>
         <div class="grid_icon_phone_info"><span>0123456789</span></div>
         <div class="">
+        <?php
+            if(isset($_GET['dangxuat'])&&$_GET['dangxuat']==1){
+                unset($_SESSION['dangky']);
+            } 
+        ?>
             <?php
 				if(isset($_SESSION['dangky'])){                     			
                         echo '
                         <div class="header_account">
-                            <a href="index.php?quanly=account" style= "text-decoration: none; cursor: pointer;display: block;">
-                                <span class = "grid_login_a" style="color:red">
-                                    <i class = " grid_login_icon fas fa-user"></i>
+                            <a href="index.php?quanly=account" style= "text-decoration: none; cursor: pointer;display: flex;">
+                                <img class = "user-avatar"src="./assets/img/user-avatar.png" alt="">
+                                <div class = "grid_login_a" style="">
                                     '.$_SESSION['dangky'].'
                                     <i class = " fas fa-caret-down"></i>
-                                </span>
+                                </div>
                             </a>
                             <ul class="header__navbar-user-menu">
                                 <li class="header__navbar-user-item">

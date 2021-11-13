@@ -10,6 +10,7 @@
         <a href="index.php" class="header_logo"> <img src="./assets/img/logo1.png"> </img></a>
         <ul class="header_ul">
             <li class="home_page header__navbar"><a class="header_a" href="index.php">TRANG CHỦ</a></li>
+            <li class="home_page header__navbar"><a class="header_a" href="index.php?quanly=sansolana">SÀN SOLANA</a></li>
             <?php 
 				while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
 			?>
