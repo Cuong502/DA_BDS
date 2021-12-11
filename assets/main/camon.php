@@ -1,0 +1,1 @@
+<p>Cám ơn bạn đã mua Bất động sản của chúng tôi, chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất</p>

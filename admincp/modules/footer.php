@@ -1,0 +1,1 @@
+<p style="text-align:center; margin:20px 0;">Copyright © Cuong Nhat 2021</p>
